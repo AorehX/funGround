@@ -1,52 +1,46 @@
-///C++ simple sleep and authetication function.
+///C++ simple sleep and authentication function.
 #include <iostream>
-
-//library effective with linux
 #include <unistd.h>
-
-///library effective with windows.
-#include <windows.h>
 
 int main()
 {
-    std::string *ptr = nullptr;
-    //use for autheticating.
+    //use for authenticating.
     char access = 'y';
-    int crash = 1000000;
+    int crash = 500000;
 
     //Output message.
     std::cout << "Bypassing server please wait. 5%" << std::endl;
-    //Sleep funtion
+    //Sleep function
     sleep(2);
     //clear each output.
-    system("clear");
+    system("cls");
 
     std::cout << "Bypassing server please wait.. 10%" << std::endl;
     sleep(3);
-    system("clear");
+    system("cls");
 
     std::cout << "Bypassing server please wait.. 20%" << std::endl;
     sleep(4);
-    system("clear");
+    system("cls");
 
     std::cout << "Bypassing server please wait.. 40%" << std::endl;
     sleep(5);
-    system("clear");
+    system("cls");
 
     std::cout << "Bypassing server please wait... 60%" << std::endl;
     sleep(6);
-    system("clear");
+    system("cls");
 
     std::cout << "Bypassing server please wait.... 80%" << std::endl;
     sleep(7);
-    system("clear");
+    system("cls");
 
     std::cout << "Bypassing server please wait..... 100%" << std::endl;
     sleep(8);
-    system("clear");
+    system("cls");
 
     //Notifying of successful operation.
-    std::cout << "Server bypass succefully!" << std::endl;
+    std::cout << "Server bypass successfully!" << std::endl;
 
     do
     {
@@ -54,7 +48,7 @@ int main()
         std::cout << "Press y/Y to login ";
         //For prompting keyword
         std::cin >> access;
-        system("clear");
+        system("cls");
         //function to check if prompt key is valid
         if (access != 'y' && access != 'Y')
         {
@@ -66,13 +60,13 @@ int main()
         }
 
     } while (access != 'y' && access != 'Y');
-    //Prompt will continue untill y or Y is inputed.
+    //Prompt will continue until y or Y is inputted.
 
     for (int i = 0; i < crash; i++)
     {
         std::cout << "injecting virus " << i << "%" << std::endl;
     }
-    std::cout << "Fail to inject virus! program stop at '999999'" << std::endl;
+    std::cout << "Fail to inject virus! program stop at '499999'" << std::endl;
 
     //system("pause < 0");
     return 0;
